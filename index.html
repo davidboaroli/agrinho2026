@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte & Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <header class="header-principal">
+            <h1 class="titulo-pagina">Descubra o valor de sua lavoura e de forma sustentável</h1>
+            <p class="subtitulo-pagina">Produtividade, Inovação Tecnológica e Respeito ao Meio Ambiente</p>
+        </header>
+
+        <section class="introducao">
+            <h2>O Compromisso da Agricultura Moderna</h2>
+            <p>A agricultura contemporânea enfrenta o desafio dual de elevar os índices de produtividade para atender à demanda global e, simultaneamente, mitigar os impactos ambientais. O conceito de <strong>Agro Forte e Sustentável</strong> fundamenta-se na otimização de recursos básicos (solo, água, sementes e insumos) por meio da ciência aplicada e do gerenciamento de custos rigoroso. Abaixo, detalhamos os pilares essenciais para o sucesso de uma safra de alta performance e ecologicamente equilibrada.</p>
+        </section>
+
+        <main class="conteudo-principal">
+            
+            <article class="card-topico">
+                <div class="topico-texto">
+                    <h3>1. Planejamento Espacial e a Escolha da Plantação</h3>
+                    <p>O sucesso de uma safra de alto rendimento começa na escolha correta do arranjo de plantas e na qualidade do material genético (sementes). Práticas como o <strong>Plantio Direto na Palha</strong> evitam a erosão hídrica e eólica, mantendo a umidade natural do solo e estimulando a biodiversidade microbiana.</p>
+                </div>
+                <div class="topico-imagem">
+                    <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=600&q=80" alt="Plantação sustentável">
+                </div>
+            </article>
+
+            <article class="card-topico invertido">
+                <div class="topico-texto">
+                    <h3>2. Adubação Orgânica e Regeneração Estrutural</h3>
+                    <p>A adubação orgânica atua como um condicionador essencial para as propriedades físicas, químicas e biológicas do solo. O uso de matéria orgânica eleva a Capacidade de Troca Catiônica (CTC), melhorando a agregação do solo e a retenção de água e nutrientes.</p>
+                </div>
+                <div class="topico-imagem">
+                    <img src="https://images.unsplash.com/photo-1592985684741-9eb5110c7a52?auto=format&fit=crop&w=600&q=80" alt="Solo sendo preparado com adubo orgânico">
+                </div>
+            </article>
+
+            <article class="card-topico">
+                <div class="topico-texto">
+                    <h3>3. Fertilizantes Minerais e Nutrição Científica</h3>
+                    <p>Os fertilizantes minerais fornecem macronutrientes (NPK) de forma imediata e calculada. A aplicação deve ser baseada em uma análise rigorosa do solo. O uso racional impede o desperdício financeiro e evita a contaminação de rios.</p>
+                </div>
+                <div class="topico-imagem">
+                    <img src="https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&w=600&q=80" alt="Fertilizantes minerais">
+                </div>
+            </article>
+
+            <article class="card-topico invertido">
+                <div class="topico-texto">
+                    <h3>4. Mecanização Inteligente e Precisão</h3>
+                    <p>A introdução de maquinários com telemetria e satélite (GPS) revolucionou o campo. A mecanização moderna reduz a compactação do solo, economiza combustível e aplica insumos na medida exata, sem sobreposições.</p>
+                </div>
+                <div class="topico-imagem">
+                    <img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=600&q=80" alt="Trator moderno operando">
+                </div>
+            </article>
+        </main>
+
+        <section class="secao-calculadora">
+            <div class="cabecalho-calculadora">
+                <h2>Planilha de Custos Operacionais e Insumos</h2>
+                <p>Preencha a quantidade e o valor unitário para projetar os custos totais de produção da sua safra.</p>
+            </div>
+            
+            <table class="tabela-custos">
+                <thead>
+                    <tr>
+                        <th>Item de Produção</th>
+                        <th>Quantidade (Unid./Kg/Ha)</th>
+                        <th>Valor Unitário (R$)</th>
+                        <th>Custo Total do Item</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="nome-item">🌾 Sementes</td>
+                        <td><input type="number" id="qtd_semente" class="input-calc" value="0" min="0" oninput="calcularLavoura()"></td>
+                        <td><input type="number" id="val_semente" class="input-calc" value="0" min="0" step="0.01" oninput="calcularLavoura()"></td>
+                        <td id="total_semente" class="resultado-parcial">R$ 0,00</td>
+                    </tr>
+                    <tr>
+                        <td class="nome-item">🍂 Adubo Orgânico</td>
+                        <td><input type="number" id="qtd_adubo" class="input-calc" value="0" min="0" oninput="calcularLavoura()"></td>
+                        <td><input type="number" id="val_adubo" class="input-calc" value="0" min="0" step="0.01" oninput="calcularLavoura()"></td>
+                        <td id="total_adubo" class="resultado-parcial">R$ 0,00</td>
+                    </tr>
+                    <tr>
+                        <td class="nome-item">🔬 Fertilizantes NPK</td>
+                        <td><input type="number" id="qtd_fertilizante" class="input-calc" value="0" min="0" oninput="calcularLavoura()"></td>
+                        <td><input type="number" id="val_fertilizante" class="input-calc" value="0" min="0" step="0.01" oninput="calcularLavoura()"></td>
+                        <td id="total_fertilizante" class="resultado-parcial">R$ 0,00</td>
+                    </tr>
+                    <tr>
+                        <td class="nome-item">🚜 Mecanização (Horas)</td>
+                        <td><input type="number" id="qtd_mecanizacao" class="input-calc" value="0" min="0" oninput="calcularLavoura()"></td>
+                        <td><input type="number" id="val_mecanizacao" class="input-calc" value="0" min="0" step="0.01" oninput="calcularLavoura()"></td>
+                        <td id="total_mecanizacao" class="resultado-parcial">R$ 0,00</td>
+                    </tr>
+                    <tr class="linha-total-geral">
+                        <td colspan="3" class="txt-total">CUSTO TOTAL ESTIMADO DA SAFRA:</td>
+                        <td id="custo_total_geral" class="valor-total-final">R$ 0,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="secao-dicas-variedades">
+            <h2>Guia Técnico: Cultivo Sustentável e Variedades</h2>
+            
+            <div class="bloco-sustentabilidade">
+                <h3>Boas Práticas de Preservação Ambiental</h3>
+                <p>Produzir de forma sustentável exige metodologias que preservem o ecossistema local:</p>
+                <ul>
+                    <li><strong>Manejo Integrado de Pragas (MIP):</strong> Monitoramento da lavoura para uso do controle biológico e diminuição da carga tóxica.</li>
+                    <li><strong>Preservação de Áreas de Proteção:</strong> A manutenção de matas ciliares protege os recursos hídricos contra o assoreamento.</li>
+                    <li><strong>Conservação da Água:</strong> Curvas de nível reduzem o escoamento rápido da água da chuva, protegendo o solo e recarregando aquíferos.</li>
+                </ul>
+            </div>
+
+            <div class="bloco-cultivares">
+                <h3>Variedades de Alto Desempenho</h3>
+                <div class="grid-culturas">
+                    <div class="card-cultura">
+                        <h4>Milho (Zea mays)</h4>
+                        <p>Híbridos com tecnologia Bt e tolerância ao estresse hídrico. Essencial manter áreas de refúgio.</p>
+                    </div>
+                    <div class="card-cultura">
+                        <h4>Soja (Glycine max)</h4>
+                        <p>Aposte na inoculação de bactérias fixadoras de nitrogênio, promovendo economia absurda no fertilizante.</p>
+                    </div>
+                    <div class="card-cultura">
+                        <h4>Feijão (Phaseolus vulgaris)</h4>
+                        <p>Escolha cultivares de tipo Carioca ou Preto com alta resistência ao mosaico dourado.</p>
+                    </div>
+                    <div class="card-cultura">
+                        <h4>Trigo (Triticum aestivum)</h4>
+                        <p>Opção essencial de inverno para plantio direto, garantindo que o solo não sofra erosão no tempo seco.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="rodape">
+            <p>© 2026 Agro Forte & Futuro Sustentável - Gestão Inteligente e Responsabilidade Ecológica.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

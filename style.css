@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f3f6f3;
+    color: #2b3a2e;
+    line-height: 1.6;
+    border-left: 20px solid #1c3d22;
+    border-right: 20px solid #1c3d22;
+}
+
+.main-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.header-principal {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f7faf7;
+    border-bottom: 4px solid #38761d;
+    margin-bottom: 40px;
+    border-radius: 4px;
+}
+
+.titulo-pagina {
+    color: #1c3d22;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.subtitulo-pagina {
+    color: #557a5b;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.introducao { margin-bottom: 40px; padding: 0 15px; }
+.introducao h2 { color: #1c3d22; font-size: 1.6rem; border-bottom: 3px solid #38761d; display: inline-block;}
+
+.card-topico {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #fafdfa;
+    border: 1px solid #e1ebe2;
+    border-radius: 6px;
+}
+
+.card-topico.invertido { flex-direction: row-reverse; background-color: #f6faf6;}
+.topico-texto { padding: 30px; flex: 1;}
+.topico-imagem { flex: 1; padding: 15px;}
+.topico-imagem img { width: 100%; border-radius: 4px; }
+.topico-texto h3 { color: #27522e; margin-bottom: 10px; }
+
+/* Tabela e Calculadora */
+.secao-calculadora { margin: 50px 0; border: 1px solid #dcdfdc; padding: 30px; border-radius: 8px; }
+.cabecalho-calculadora { border-left: 5px solid #ff9900; padding-left: 15px; margin-bottom: 25px; }
+
+.tabela-custos { width: 100%; border-collapse: collapse; margin-top: 15px; }
+.tabela-custos th { background-color: #27522e; color: #fff; text-align: left; padding: 12px; }
+.tabela-custos td { padding: 12px; border-bottom: 1px solid #e2e7e2; }
+.nome-item { font-weight: bold; color: #27522e; }
+
+.input-calc { width: 100%; max-width: 120px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+.input-calc:focus { border-color: #38761d; outline: none; }
+
+.resultado-parcial { font-weight: bold; color: #444; }
+.linha-total-geral { background-color: #fdf8f0; }
+.linha-total-geral td { border-top: 2px solid #ff9900; font-weight: bold; }
+.txt-total { text-align: right; color: #b45f06; font-size: 1.05rem; }
+.valor-total-final { color: #b45f06; font-size: 1.25rem; }
+
+/* Grid Final */
+.secao-dicas-variedades { background-color: #f9fbf9; padding: 35px 25px; border-top: 3px solid #38761d; margin-top: 40px; }
+.grid-culturas { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px; }
+.card-cultura { flex: 1 1 calc(50% - 20px); background: #fff; padding: 20px; border: 1px solid #e1e7e1; border-radius: 4px; }
+.card-cultura h4 { color: #38761d; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-bottom: 10px; }
+
+.rodape { text-align: center; padding: 20px; color: #77887d; font-size: 0.9rem; }
